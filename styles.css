@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: 'Khula', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #16D9E3;
+}
+
+.start {
+  font-size: 1.5rem;
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4rem;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background-image: linear-gradient(to bottom, #474551, #47416d, #443d89, #3d36a5, #312ec0, #244bd7, #1266ec, #007fff, #00adff, #00cffe, #00eaba, #5ffb6a);
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  background-color: transparent;
+  border: 2px solid #C0C0C0;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.time-btn:hover {
+  border: 2px solid #16D9E3;
+  color: #16D9E3;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.primary {
+  color: #16D9E3;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-image: linear-gradient(to right top, #d8e3f2, #9cb1d7, #687fbb, #3c4e9d, #121e7a);
+  box-shadow: -8px -8px 20px #2A333D, 10px 7px 20px #475462;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
